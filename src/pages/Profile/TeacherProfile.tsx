@@ -1,5 +1,5 @@
 
-import React from "react";
+
 import UserMetaCard from "../../components/UserProfile/UserMetaCard";
 import UserInfoCard from "../../components/UserProfile/UserInfoCard";
 

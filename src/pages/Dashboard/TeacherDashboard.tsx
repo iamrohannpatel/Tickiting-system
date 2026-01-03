@@ -1,4 +1,3 @@
-import React from "react";
 import PageMeta from "../../components/common/PageMeta";
 import { useTickets } from "../../context/TicketContext";
 import Button from "../../components/ui/button/Button";
@@ -7,7 +6,7 @@ import TicketCard from "../../components/tickets/TicketCard";
 import TicketTable, { ColumnDef } from "../../components/tickets/TicketTable";
 import StatusBadge from "../../components/tickets/StatusBadge";
 
-const TeacherDashboard: React.FC = () => {
+const TeacherDashboard = () => {
     const { tickets, loading } = useTickets();
 
     const stats = {

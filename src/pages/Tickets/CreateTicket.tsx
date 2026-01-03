@@ -3,7 +3,6 @@ import PageMeta from "../../components/common/PageMeta";
 import Label from "../../components/form/Label";
 import Input from "../../components/form/input/InputField";
 import Button from "../../components/ui/button/Button";
-import FileInput from "../../components/form/input/FileInput";
 import Alert from "../../components/ui/alert/Alert";
 import { useTickets } from "../../context/TicketContext";
 import { useNavigate } from "react-router";
