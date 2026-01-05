@@ -2,20 +2,20 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router";
 import SignIn from "./pages/AuthPages/SignIn";
 import SignUp from "./pages/AuthPages/SignUp";
 import NotFound from "./pages/OtherPage/NotFound";
-import Profile from "./pages/Profile/Profile";
-import Blank from "./pages/Blank";
 import AppLayout from "./layout/AppLayout";
 import { ScrollToTop } from "./components/common/ScrollToTop";
 import { AuthProvider, useAuth } from "./context/AuthContext";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
+import { TicketProvider } from "./context/TicketContext";
+import { Toaster } from 'react-hot-toast';
+
+import Profile from "./pages/Profile/Profile";
+import Blank from "./pages/Blank";
 import TeacherDashboard from "./pages/Dashboard/TeacherDashboard";
 import AdminDashboard from "./pages/Dashboard/AdminDashboard";
 import MaintenanceDashboard from "./pages/Dashboard/MaintenanceDashboard";
-import { TicketProvider } from "./context/TicketContext";
 import CreateTicket from "./pages/Tickets/CreateTicket";
 import TicketDetail from "./pages/Tickets/TicketDetail";
-
-import { Toaster } from 'react-hot-toast';
 
 // Helper component to redirect based on role
 const RedirectToDashboard = () => {
